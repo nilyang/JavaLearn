@@ -8,27 +8,62 @@ public class Main {
 		clock.tick();
 		System.out.println(clock);
 		in.close();
-
 	}
 
 }
 
-class Clock
-{
-	int hour;
-	int minute;
-	int second;
-	
-	Clock(int hour, int minute, int second)
-	{
-		this.hour = hour;
-		this.minute = minute;
-		this.second = second;
-		
+class Display {
+	int value = 0;
+	int limit = 0;
+
+	Display(int limit) {
+		this.limit = limit;
 	}
 
-	void tick()
-	{
-		
+	public void increase() {
+		value = value + 1;
+		if (value == limit) {
+			value = 0;
+		}
 	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int val) {
+		value = val;
+	}
+}
+
+class Clock {
+	Display hour = new Display(24);
+	Display minute = new Display(60);
+	Display second = new Display(60);
+
+	Clock(int hour, int minute, int second) {
+		if (hour > 23 || minute > 59 || second > 59 
+				|| hour < 0 || minute < 0 || second < 0) {
+			throw new IllegalArgumentException("²ÎÊý´íÎó");
+		}
+		this.hour.setValue(hour);
+		this.minute.setValue(minute);
+		this.second.setValue(second);
+	}
+
+	public void tick() {
+		second.increase();
+		if (second.getValue() == 0) {
+			minute.increase();
+			if (minute.getValue() == 0) {
+				hour.increase();
+			}
+		}
+	}
+
+	public String toString() {
+		return String.format("%1$02d", this.hour.getValue()) + ":" + String.format("%1$02d", this.minute.getValue()) + ":"
+				+ String.format("%1$02d", this.second.getValue());
+	}
+
 }

@@ -4,7 +4,7 @@ public class BasicTest {
 
 	public static void main(String[] args) {
 		BasicTest b = new BasicTest();
-		//b.test_ascii();
+		b.test_ascii();
 		b.test_char_boxing();
 		b.test_int_boxing();
 	}
@@ -44,4 +44,9 @@ public class BasicTest {
 		System.out.println( k == l);
 	}
 
+	public void test_byte()
+	{
+		byte x = 1 ;
+		System.out.println(x);
+	}
 }
