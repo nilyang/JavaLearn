@@ -19,8 +19,8 @@ public class Main {
 }
 
 class Fraction {
-	int Numerator;   //·Ö×Ó
-	int Denominator; //·ÖÄ¸
+	int Numerator;   //åˆ†å­
+	int Denominator; //åˆ†æ¯
 	
 	Fraction(int a , int b)
 	{
@@ -48,8 +48,8 @@ class Fraction {
 	}
 
 	/**
-	 * Õ·×ªÏà³ı·¨
-	 * @see http://wenku.baidu.com/view/61a1b24703d8ce2f0066236b.html?from=search
+	 * è¾—è½¬ç›¸é™¤æ³•
+	 * @see "http://wenku.baidu.com/view/61a1b24703d8ce2f0066236b.html?from=search"
 	 * @param m
 	 * @param n
 	 * @return

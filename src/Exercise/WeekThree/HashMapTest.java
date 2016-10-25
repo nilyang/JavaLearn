@@ -13,7 +13,7 @@ public class HashMapTest
 
  	public static void test_hashmap()
  	{
- 		Map<String, Integer> map = new HashMap<String, Integer>();
+ 		Map<String, Integer> map = new HashMap<>();
  		map.put("Hangzhou", 1030);
  		map.put("Suzou", 2300);
  		map.put("Shanghai", 3323);

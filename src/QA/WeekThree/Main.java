@@ -8,7 +8,7 @@ public class Main {
 		test();
 	}
 
-	//TODO ÏÂÈý½Ç¾ØÕó´æ´¢Àï³Ì±í£¬¿ÉÒÔ³¢ÊÔ
+	//TODO ä¸‹ä¸‰è§’çŸ©é˜µå­˜å‚¨é‡Œç¨‹è¡¨ï¼Œå¯ä»¥å°è¯•
 	public static void test()
 	{
 		
@@ -47,11 +47,11 @@ public class Main {
 		distmap.print();
 		int try_times = 0;
 		while(true){
-			System.out.println("ÊäÈë³ÇÊÐ");
+			System.out.println("è¾“å…¥åŸŽå¸‚");
 			line = scan.nextLine();
 			cities = line.split(pattern);
 			int dist = distmap.search(cities[0], cities[1]);			
-			System.out.println(cities[0] + "ºÍ"+ cities[1] +"¾àÀë£º" +dist);
+			System.out.println(cities[0] + "å’Œ"+ cities[1] +"è·ç¦»ï¼š" +dist);
 			System.out.println();
 			if(try_times++>5){
 				scan.close();

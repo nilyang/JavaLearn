@@ -37,23 +37,28 @@
 
 Hagzou	Hugzou	Jigxng    ###
 
-0	1108	708
+0		1108	708
 
-1108	0	994
+1108	0		994
 
-708	994	0
+708		994		0
+
 
 Hagzou    Jigxng
 
-
-
 输出样例：
-
-
 708
 
+=====
+输入：
+Hagzou Hugzou
 
+输出
+1108
 
+		
+map内容		
+{Hugzou:Hugzou=0, Hugzou:Jigxng=994, Hagzou:Hugzou=1108, Hagzou:Hagzou=0, Hagzou:Jigxng=708, Jigxng:Jigxng=0}
 
 
 

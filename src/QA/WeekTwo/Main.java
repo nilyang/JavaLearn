@@ -44,7 +44,7 @@ class Clock {
 	Clock(int hour, int minute, int second) {
 		if (hour > 23 || minute > 59 || second > 59 
 				|| hour < 0 || minute < 0 || second < 0) {
-			throw new IllegalArgumentException("²ÎÊý´íÎó");
+			throw new IllegalArgumentException("å‚æ•°é”™è¯¯");
 		}
 		this.hour.setValue(hour);
 		this.minute.setValue(minute);
