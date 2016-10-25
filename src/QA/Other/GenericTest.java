@@ -1,8 +1,5 @@
 package QA.Other;
 
-/**
- * Created by lxrm on 2016/10/25.
- */
 public class GenericTest
 {
     public static void main(String [] args)
