@@ -33,7 +33,7 @@ public class ArrayMapHash {
 		int[] a = new int[5];
 		for(int v:a){
 			System.out.println(v);
-			v=1;//���ܸı�a����Ԫ�ص�ֵ���Ƕ�������forѭ���ǿ�����������
+			v=1;//不能改变a数组元素的值，非对象数组for循环是拷贝而非引用
 		}
 		
 		for(int v:a){
@@ -44,7 +44,7 @@ public class ArrayMapHash {
 
 	public static void testArrayList()
 	{
-		ArrayList<Value> a = new ArrayList<Value>();
+		ArrayList<Value> a = new ArrayList<>();
 		a.add(new Value());
 		a.add(new Value());
 		for(Value v:a){
@@ -68,7 +68,7 @@ public class ArrayMapHash {
 			a[i].set(i);
 		}
 
-		//a ���������ÿһ��Ԫ��ֻ��һ��ָ���������ã�����ָ�룩
+		//a 对象数组的每一个元素只是一个指向对象的引用（疑似指针）
 		for(Value v: a){
 			//System.out.println(v);//Exercise.WeekThree.Value@15db9742
 			System.out.println(v.get());
@@ -84,7 +84,7 @@ public class ArrayMapHash {
 	{
 		
 		
-		HashSet<String> s = new HashSet<String>();
+		HashSet<String> s = new HashSet<>();
 		s.add("first");
 		s.add("second");
 		s.add("first");

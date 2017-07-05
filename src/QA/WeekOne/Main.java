@@ -19,8 +19,8 @@ public class Main {
 }
 
 class Fraction {
-	int Numerator;   //分子
-	int Denominator; //分母
+	private int Numerator;   //分子
+	private int Denominator; //分母
 	
 	Fraction(int a , int b)
 	{

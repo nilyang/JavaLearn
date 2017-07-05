@@ -3,22 +3,22 @@ package Exercise.WeekThree;
 import java.util.HashMap;
 
 /**
- * ¶¨ÒåÒ»¸ö¹şÏ£Àà ¸øÒÔÒ»¸öÊı×Ö£¬·µ»ØÒ»¸östring
+ * å®šä¹‰ä¸€ä¸ªå“ˆå¸Œç±» ç»™ä»¥ä¸€ä¸ªæ•°å­—ï¼Œè¿”å›ä¸€ä¸ªstring
  * 
  * @author nilyang
  * 
  */
 public class Coin {
-	//ÈİÆ÷²»ÄÜÊ¹ÓÃ»ù±¾±äÁ¿ÀàĞÍ£¬Ö»ÄÜÊ¹ÓÃÏàÓ¦µÄ¶ÔÏóÀàÀàĞÍ
-	private HashMap<Integer,String> coinNames = new HashMap<Integer,String>();
+	//å®¹å™¨ä¸èƒ½ä½¿ç”¨åŸºæœ¬å˜é‡ç±»å‹ï¼Œåªèƒ½ä½¿ç”¨ç›¸åº”çš„å¯¹è±¡ç±»ç±»å‹
+	private HashMap<Integer,String> coinNames = new HashMap<>();
 	
 	public Coin()
 	{
 		coinNames.put(1, "penny");
 		coinNames.put(10, "dime");
 		coinNames.put(25, "quarter");
-		coinNames.put(50, "half-dolar");//Í¬¼üÃû£¬ºóÕßÉúĞ§
-		coinNames.put(50, "ÎåÃ«");//Í¬¼üÃû£¬ºóÕßÉúĞ§
+		coinNames.put(50, "half-dolar");//åŒé”®åï¼Œåè€…ç”Ÿæ•ˆ
+		coinNames.put(50, "äº”æ¯›");//åŒé”®åï¼Œåè€…ç”Ÿæ•ˆ
 		
 		System.out.println(coinNames.keySet().size());
 		System.out.println(coinNames);
@@ -36,7 +36,7 @@ public class Coin {
 	
 	public String getName(int amount)
 	{
-		//Ö±½Óµ÷ÓÃ coinNames.get amountÔ½½ç£¬Ôò»á·µ»Ønull
+		//ç›´æ¥è°ƒç”¨ coinNames.get amountè¶Šç•Œï¼Œåˆ™ä¼šè¿”å›null
 		if (coinNames.containsKey(amount)){
 			return coinNames.get(amount);
 		}else{
